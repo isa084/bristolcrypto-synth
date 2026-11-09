@@ -1,0 +1,602 @@
+[
+  {
+    "sha": "5a542c1cfaa95113438820648766fe7da76d9875",
+    "date": "2026-11-07T12:41:52+05:30",
+    "title": "Merge pull request #27 from bristolcrypto/feat/bump-zp-alu-0942fd6",
+    "rtl": true
+  },
+  {
+    "sha": "45d84a0676b58cfdf60f14cefa15c4c6969d76e7",
+    "date": "2026-11-07T10:29:46+05:30",
+    "title": "Merge pull request #26 from bristolcrypto/fix-raw-rs3-with-cvxif",
+    "rtl": true
+  },
+  {
+    "sha": "7bbb8321972871175a9a6f352ed8b4b2bc321cf8",
+    "date": "2026-11-07T10:25:29+05:30",
+    "title": "Merge pull request #25 from bristolcrypto/feat-dc-synth-tsmc65",
+    "rtl": false
+  },
+  {
+    "sha": "aa0242058efd867a00c2f04667eca45f8ac459f4",
+    "date": "2026-10-29T20:19:28Z",
+    "title": "Merge pull request #22 from bristolcrypto/feat/bump-zp-alu",
+    "rtl": true
+  },
+  {
+    "sha": "1193f900559caf800cf717aa16131d5c0e85bb44",
+    "date": "2026-09-28T17:16:30+01:00",
+    "title": "Merge pull request #18 from bristolcrypto/feat/zp-synthesis-comparison",
+    "rtl": true
+  },
+  {
+    "sha": "1405e46489bc777d0fede4b0973922ea9e84fd16",
+    "date": "2026-09-22T15:57:44+01:00",
+    "title": "Update synthesis and ZP ALU submodules",
+    "rtl": true
+  },
+  {
+    "sha": "611864cda2e0b0f2957f2784098d75f6dfc2a46e",
+    "date": "2026-09-22T15:17:37+01:00",
+    "title": "Update cva6-synthesis submodule: bug fix.",
+    "rtl": false
+  },
+  {
+    "sha": "29ed6c073be910114f337fc6e8fb3ea70d5fa79f",
+    "date": "2026-09-22T15:11:13+01:00",
+    "title": "Update cva6-synthesis submodule for IIC tool PATH",
+    "rtl": false
+  },
+  {
+    "sha": "82c9578db67b78dada36c0d90b3cab65a66a88dd",
+    "date": "2026-09-22T13:44:54+01:00",
+    "title": "Use generic CVA6 synthesis submodule",
+    "rtl": false
+  },
+  {
+    "sha": "f1f8a2776d1dad1021f5a2e4c4bea2d908e77525",
+    "date": "2026-09-21T23:56:26+01:00",
+    "title": "Update ZP-ALU reduction integration",
+    "rtl": true
+  },
+  {
+    "sha": "09cd823780f2fc4f95ba10bd5035871052676a68",
+    "date": "2026-08-19T11:13:31+01:00",
+    "title": "Move ZP runner into verif/sim directory",
+    "rtl": false
+  },
+  {
+    "sha": "570f660029971a68815483faae33ebdb960f9373",
+    "date": "2026-08-18T17:52:13+01:00",
+    "title": "Add ZP ELF simulation flow",
+    "rtl": false
+  },
+  {
+    "sha": "f4f7a7b9cd1bbd1cb9b5faac5ef715aa713dd7e6",
+    "date": "2026-08-18T16:38:46+01:00",
+    "title": "Fix the third source operand routing for Class 6 (three register source) instructions",
+    "rtl": true
+  },
+  {
+    "sha": "b2fed08387e8ca42c2c8d810205afac0198aaadd",
+    "date": "2026-08-17T13:16:28+01:00",
+    "title": "bump zp-alu and rv64 zp testlist",
+    "rtl": true
+  },
+  {
+    "sha": "25db9892e60edf15e35a7ba4c7266e4ea5086f19",
+    "date": "2026-07-23T20:19:56+01:00",
+    "title": "Integrate ZP tests and synthesize full Ariane hierarchy",
+    "rtl": true
+  },
+  {
+    "sha": "c15a00d1ca09504b39082422599145ee87980549",
+    "date": "2026-07-23T12:17:29+01:00",
+    "title": "Add Dockerized Yosys/nangate45 synthesis flow for CVA6 (CVXIF not included)",
+    "rtl": false
+  },
+  {
+    "sha": "4af1f7c5619c3b1f5ec948f0ab94f077662940f7",
+    "date": "2026-07-23T00:08:02+01:00",
+    "title": "ZP instruction decode bug fix (caught by yosys-slang)",
+    "rtl": true
+  },
+  {
+    "sha": "a1ba2ccb01ef1e4a416302f95a3169aa6e8116a2",
+    "date": "2026-07-22T23:47:59+01:00",
+    "title": "Bump zp-alu submodule",
+    "rtl": true
+  },
+  {
+    "sha": "f3d767151d6e197e788084baacadab51055e3641",
+    "date": "2026-07-14T16:42:53+01:00",
+    "title": "Integrate zp-alu with CVA6 CVXIF",
+    "rtl": true
+  },
+  {
+    "sha": "4293f7444b8fa2248f8986a4a46f8810e991509e",
+    "date": "2026-06-21T17:29:56+01:00",
+    "title": "Fix RV32 PK path for testharness flow",
+    "rtl": false
+  },
+  {
+    "sha": "37f8ab175c2e672d527f305297a6a341eb266c48",
+    "date": "2026-06-19T09:54:53+01:00",
+    "title": "Fix veri-testharness-pk simulation flow",
+    "rtl": false
+  },
+  {
+    "sha": "a4d103bea7ffd38ddb5199aae3ef8376051c787a",
+    "date": "2026-05-30T12:05:20+01:00",
+    "title": "Update zp-alu submodule to latest upstream baseline",
+    "rtl": true
+  },
+  {
+    "sha": "7b3c6e3e952cd90c02917a5f6e26e065ed376b68",
+    "date": "2026-05-18T23:22:11+01:00",
+    "title": "New zp cvxif coprocessor template",
+    "rtl": true
+  },
+  {
+    "sha": "807d1c013860c492b4035459d3b0e1554bfc375a",
+    "date": "2026-05-18T15:15:42+01:00",
+    "title": "Bump zp-alu submodule",
+    "rtl": true
+  },
+  {
+    "sha": "e21dbef533dcd57954654a3591837faa1b4e2055",
+    "date": "2026-05-11T17:43:06+01:00",
+    "title": "Merge pull request #12 from bristolcrypto/ft-zp-build",
+    "rtl": true
+  },
+  {
+    "sha": "0c07eb3ba0539eedf65a03c90c22f4ef44011868",
+    "date": "2026-02-14T22:13:12Z",
+    "title": "Merge pull request #6 from bristolcrypto/ft-fixes-01",
+    "rtl": true
+  },
+  {
+    "sha": "41e512ff129ffe1443195ebf5d9dedf237c09734",
+    "date": "2026-02-12T15:31:12Z",
+    "title": "Reverted the main codebase to v5.3.0 to ensure functional cvxif on 64-bit architecture. Retained verif/tests/custom/cv_xif/cvxif_macros.h and verif/tests/custom/cv_xif/cvxif_add_nop.S from commit 4b39371a3b204c9e3e5d38fc1dae4d7977169995 to preserve necessary cvxif update",
+    "rtl": false
+  },
+  {
+    "sha": "2ef1c1b1fca419354920c5487293bc605294904e",
+    "date": "2025-02-03T13:40:02+01:00",
+    "title": "Update ID stage to support ZCMP, ZCMT and CVXIF with Superscalar (#2756)",
+    "rtl": true
+  },
+  {
+    "sha": "fd8c890def5cde7493e45831eda69038c9fea82d",
+    "date": "2025-01-31T14:13:36+01:00",
+    "title": "Makefile : Add target to generate functional coverage using verdi tool (#2755)",
+    "rtl": false
+  },
+  {
+    "sha": "70972dad54f474daf5bb8572b819c61901f59e21",
+    "date": "2025-01-31T13:10:27+01:00",
+    "title": "Update rvfi_tracer and cva6.py (#2684)",
+    "rtl": true
+  },
+  {
+    "sha": "10fced1c993f71137b9b001a6fa2f9229937e9da",
+    "date": "2025-01-31T05:46:24+01:00",
+    "title": "csr_regfile.sv: move CVA6Cfg.DebugEn to improve code coverage (#2753)",
+    "rtl": true
+  },
+  {
+    "sha": "0ec65198bc90e40c680a1404a8db51e5d2dc0cc4",
+    "date": "2025-01-31T05:44:24+01:00",
+    "title": "doc: fix description of signals in instr_scan.sv (#2752)",
+    "rtl": true
+  },
+  {
+    "sha": "a3372c51f0140b2c440957ce711df1ab35e41735",
+    "date": "2025-01-29T15:50:34+01:00",
+    "title": "cva6_rvfi_probes.sv: fix be5ac20e4 (PR 2749) (#2751)",
+    "rtl": true
+  },
+  {
+    "sha": "07f19ea319c9b31d064a221c4c46839057564df9",
+    "date": "2025-01-29T11:46:34+01:00",
+    "title": "decoder.sv: add condition CVA6Cfg.SoftwareInterruptEn (#2747)",
+    "rtl": true
+  },
+  {
+    "sha": "59822e7ad191df40bf384feef20e45e8402eef74",
+    "date": "2025-01-29T11:45:47+01:00",
+    "title": "instr_scan.sv: remove useless condition (#2748)",
+    "rtl": true
+  },
+  {
+    "sha": "be5ac20e46c1258e66718543395c43a5d9a53460",
+    "date": "2025-01-28T18:37:07+01:00",
+    "title": "Fix RVFI rs1/rs2 len from VLEN to XLEN (#2749)",
+    "rtl": true
+  },
+  {
+    "sha": "3e8eb88e88aef15560d3d68272ebeb3894135c26",
+    "date": "2025-01-28T00:07:58+01:00",
+    "title": "Fix UVM scoreboard check VLEN bits only (#2742)",
+    "rtl": false
+  },
+  {
+    "sha": "542fe39adc66c0f7bb5bf935d5f92f4e45f0dd19",
+    "date": "2025-01-27T13:23:26+01:00",
+    "title": "Adding support for ZCMT Extension for Code-Size Reduction in CVA6 (#2659)",
+    "rtl": true
+  },
+  {
+    "sha": "fb4a8d4472f9140fbac5b3b1ec9cea65a48b24d9",
+    "date": "2025-01-26T21:51:25+01:00",
+    "title": "Fix missing parametrization in performance counters (#2740)",
+    "rtl": true
+  },
+  {
+    "sha": "3ebb510374fc470900ccb563f430a61e78973618",
+    "date": "2025-01-24T13:56:24+01:00",
+    "title": "dvplan_csr-access.md: remove file in VerifPlans/csr_access (#2739)",
+    "rtl": false
+  },
+  {
+    "sha": "9d039197d1c4325c72397347bb07d5576e8e9364",
+    "date": "2025-01-23T17:54:21+01:00",
+    "title": "update smoke tests file names (#2736)",
+    "rtl": false
+  },
+  {
+    "sha": "024b8eada825cf0455d535a4087337d8cccafbf3",
+    "date": "2025-01-23T17:53:07+01:00",
+    "title": "config_pkg: fix HPDCache related parameter (#2731)",
+    "rtl": true
+  },
+  {
+    "sha": "cbb08e8d19bc9a40ff1d29a30d797e88cc8b32e8",
+    "date": "2025-01-23T16:48:13+01:00",
+    "title": "docs: clarify WLRL CSR fields on CVA6 (fix #1053) (#2733)",
+    "rtl": false
+  },
+  {
+    "sha": "3ce44b1b4e3344b86053b6a34eb6954fc24efb8f",
+    "date": "2025-01-23T08:32:31+01:00",
+    "title": "Spyglass clean up: multiple change to remove Spyglass warnings (#2727)",
+    "rtl": true
+  },
+  {
+    "sha": "664c515b2259384089c88522200703f0fcc76640",
+    "date": "2025-01-22T23:45:09+01:00",
+    "title": "Fix decoding of CLRI, BINVI, BSETI, BEXTI and RORI where bit 25 is reserved in RV32 (#2728)",
+    "rtl": true
+  },
+  {
+    "sha": "c19a3c1ace6b6c4b4f85f7e5726b8c90e540b0ef",
+    "date": "2025-01-22T23:42:47+01:00",
+    "title": "Spike : mtvec doesn't support vectored mode for cv32a65x (#2729)",
+    "rtl": false
+  },
+  {
+    "sha": "45aa060b5c50b657700c83314169fe2b521ab714",
+    "date": "2025-01-22T10:51:14+01:00",
+    "title": "docs: regenerate dvplan_csr-access.md (#2625) (#2714)",
+    "rtl": false
+  },
+  {
+    "sha": "14998fc1618c1ac5d76fe08eec32b9bb69b107bb",
+    "date": "2025-01-22T09:11:11+01:00",
+    "title": "Bump verif/core-v-verif from `19b5a3f` to `60e5724` (#2724)",
+    "rtl": false
+  },
+  {
+    "sha": "f80c507aea88557b32c6aaf0053831fd50a21f58",
+    "date": "2025-01-22T09:07:01+01:00",
+    "title": "docs/requirements.txt: add missing packages for RTD (#2726)",
+    "rtl": false
+  },
+  {
+    "sha": "b9886a27a2fa80afd70013f53d78866ced3382ca",
+    "date": "2025-01-22T08:29:35+01:00",
+    "title": "Clean up table (#2725)",
+    "rtl": false
+  },
+  {
+    "sha": "02092dbcf0f825657a11c25841cacaa753663c79",
+    "date": "2025-01-21T17:42:39+01:00",
+    "title": "riscv-isa-manual: ignore mm-formal.adoc (#2723)",
+    "rtl": false
+  },
+  {
+    "sha": "24c6a891b879f01684daadf6e25b35f40e523c11",
+    "date": "2025-01-21T17:06:26+01:00",
+    "title": "Docs: define values for CVXIF in 60x and 65x configuration (#2721)",
+    "rtl": false
+  },
+  {
+    "sha": "fb899feec1807d50477a46ca97ff2d7821a44633",
+    "date": "2025-01-21T17:04:24+01:00",
+    "title": "fix 023e67e9 (define PATH variable and make in one command) (#2722)",
+    "rtl": false
+  },
+  {
+    "sha": "b6b259914aa3b7a662ca9374ee6bbb21bbb36e6c",
+    "date": "2025-01-21T16:25:18+01:00",
+    "title": "fix 8e5872c03 (add missing smctr.adoc file) (#2720)",
+    "rtl": false
+  },
+  {
+    "sha": "023e67e9be1b6cd09940a030529baf1645287102",
+    "date": "2025-01-21T16:00:13+01:00",
+    "title": ".readthedocs.yaml: add node modules to PATH environment variable (#2719)",
+    "rtl": false
+  },
+  {
+    "sha": "98604b59207c27c131fb2c67317d8656f41cf27b",
+    "date": "2025-01-21T14:53:37+01:00",
+    "title": "csr_regfile: SEIP is read only 0 (fix #2056) (#2716)",
+    "rtl": true
+  },
+  {
+    "sha": "7bdfa5f63eb7f5407675c346f9408f0958e6aa34",
+    "date": "2025-01-21T14:34:40+01:00",
+    "title": ".readthedocs.yaml: clone submodule recursively (#2718)",
+    "rtl": false
+  },
+  {
+    "sha": "8e5872c03bd80285ccd4c5fc4c19a3738750856d",
+    "date": "2025-01-21T09:56:51+01:00",
+    "title": "update riscv-isa-manual to riscv-isa-release-4f277ff-2025-01-17 (#2717)",
+    "rtl": false
+  },
+  {
+    "sha": "3d2ff00b1c958bbccab9189a00cbebeda84e067b",
+    "date": "2025-01-17T14:12:08+01:00",
+    "title": "Modify MSUB, NMADD, NMSUB behaviour to differs from other instructions. (#2712)",
+    "rtl": true
+  },
+  {
+    "sha": "e840a61e80e5f6ead475128ff3adb74ad7fd051a",
+    "date": "2025-01-17T12:39:05+01:00",
+    "title": "Rewrite assert to avoid multi assertion (#2713)",
+    "rtl": true
+  },
+  {
+    "sha": "7af0f2e4d1e7bd9d58ae6152d97e58469553bc6b",
+    "date": "2025-01-16T23:12:33+01:00",
+    "title": "ariane_pkg: remove unused localparam ISSUE_WIDTH (#2710)",
+    "rtl": true
+  },
+  {
+    "sha": "41c22069a04ac4884bf3be9f528f8da90d8f2be4",
+    "date": "2025-01-16T23:09:57+01:00",
+    "title": "Add parameter to disable software interrupt. Fix issue #2500 (#2711)",
+    "rtl": true
+  },
+  {
+    "sha": "5518a41c08a1949c606d54b9ac631e8f7635e7f3",
+    "date": "2025-01-15T19:57:00+01:00",
+    "title": "Bump verif/core-v-verif from `464bf7a` to `19b5a3f` (#2703)",
+    "rtl": false
+  },
+  {
+    "sha": "21b247dca7f35a7897af28456cb3df37aaa4d87e",
+    "date": "2025-01-15T17:48:01+01:00",
+    "title": "CI: copy seeds in artifacts for generated tests (#2708)",
+    "rtl": false
+  },
+  {
+    "sha": "86c53c53345e17630e10e872058ffe650148a275",
+    "date": "2025-01-15T17:47:07+01:00",
+    "title": "config_pkg: Update configurations with new flush parameter (#2704)",
+    "rtl": true
+  },
+  {
+    "sha": "cb5c623e5083656fd6bead45c6a7128e891f121a",
+    "date": "2025-01-15T11:17:37+01:00",
+    "title": "mmu: Fix pmpcfg, pmpaddr width (#2707)",
+    "rtl": true
+  },
+  {
+    "sha": "b28545ef7899b69a7d72267623e179973b356b31",
+    "date": "2025-01-15T10:29:18+01:00",
+    "title": "id_stage/pmp_entry: Fix formatting (#2705)",
+    "rtl": true
+  },
+  {
+    "sha": "a12d51143217742fe42058e4dceb4baa33edf5e6",
+    "date": "2025-01-10T21:59:42+01:00",
+    "title": "[Skip CI] Extending RESOURCES.md document (#2629)",
+    "rtl": false
+  },
+  {
+    "sha": "db568f3e1de533c9a804f39d2709dbf18cf8733a",
+    "date": "2025-01-10T17:57:32+01:00",
+    "title": "Fully support the Write-Back mode of the HPDcache in the CVA6 (#2691)",
+    "rtl": true
+  },
+  {
+    "sha": "71f96d43299198946adbea8e8f0bd8b100ad3ba0",
+    "date": "2025-01-10T08:27:10+01:00",
+    "title": "wt_axi_adapter: Remove redundant, parameterization-breaking zero extensions (#2697)",
+    "rtl": true
+  },
+  {
+    "sha": "ee58bfab9447cb3bd6553ba9212cdb650f8276e8",
+    "date": "2025-01-09T14:42:41+01:00",
+    "title": "wt_dcache_buffer: Avoid out-of-range user signal access (#2698)",
+    "rtl": true
+  },
+  {
+    "sha": "1c6b89df5b1e22753d6f6d6d385943ddd44f223c",
+    "date": "2025-01-09T14:38:49+01:00",
+    "title": "doc: RVZicntr extension can be not supported (#2699)",
+    "rtl": false
+  },
+  {
+    "sha": "837b204753936abc2094161ee8726169b578b240",
+    "date": "2025-01-09T12:14:18+01:00",
+    "title": "Make PMP disableable (#2692)",
+    "rtl": true
+  },
+  {
+    "sha": "5a484fce428a666eeb4e115846541280e1a70e72",
+    "date": "2025-01-08T23:06:53+01:00",
+    "title": "cache_subsystem: :bug: Fix AXI read len (#2696)",
+    "rtl": true
+  },
+  {
+    "sha": "6268d28939abd517d0e0481f663c4826b94f46c7",
+    "date": "2025-01-08T18:55:08+01:00",
+    "title": "Code coverage : Add option to support coverage condition with arithmetic operations (#2694)",
+    "rtl": false
+  },
+  {
+    "sha": "e55f25d23c06b3923f22a34e1a577b6f1fcfd8dd",
+    "date": "2025-01-08T13:40:30+01:00",
+    "title": "csr_regfile: Fix irq/ex delegation in RVH (#2689)",
+    "rtl": true
+  },
+  {
+    "sha": "bca4e1544fe1d5a4e3014653fb8ec0baa0a83b61",
+    "date": "2025-01-08T12:01:33+01:00",
+    "title": "update readme with information how to generate bitstream for agilex 7 (#2690)",
+    "rtl": false
+  },
+  {
+    "sha": "31008fc4b90a0441761c5604caaa5d75e2f1dabe",
+    "date": "2025-01-08T09:08:44+01:00",
+    "title": "remove ifndef VERILATOR (#2686)",
+    "rtl": true
+  },
+  {
+    "sha": "eab88770ec5b70bc41069023cc516c3cbbd48f22",
+    "date": "2025-01-07T23:45:49+01:00",
+    "title": "Altera flow support (#2649)",
+    "rtl": true
+  },
+  {
+    "sha": "2155d0e9c4a54998f8bb9aa6c28eb84b2a55b56f",
+    "date": "2025-01-07T08:45:28+01:00",
+    "title": "Fix #2665 #2400 #2657 (#2685)",
+    "rtl": true
+  },
+  {
+    "sha": "86a80f0eaa4ddbe79360a817f3fd332c6a8e3c09",
+    "date": "2025-01-03T11:14:15+01:00",
+    "title": "Bump verif/core-v-verif from `6c1e999` to `464bf7a` (#2683)",
+    "rtl": false
+  },
+  {
+    "sha": "446defb900ec211b51efcb33e8acba3d7848e455",
+    "date": "2025-01-02T14:51:24+01:00",
+    "title": "CVXIF VSEQ: RD equal x10 for CUS_ADD_RS3_RTYPE (#2682)",
+    "rtl": false
+  },
+  {
+    "sha": "4b9cbf922354956f6e888231dff29286aafefe43",
+    "date": "2024-12-20T13:28:49+01:00",
+    "title": "Various fixes for CVXIF following verification. (#2678)",
+    "rtl": true
+  },
+  {
+    "sha": "b4a037d33b7eb8df706a81d68519049fde0b1865",
+    "date": "2024-12-19T16:20:45+01:00",
+    "title": "Interrupt cov : sample when rvfi.intr is asserted (#2675)",
+    "rtl": false
+  },
+  {
+    "sha": "73bae85e0c41234d90f7987d2d4bdf865df38a68",
+    "date": "2024-12-19T14:00:37+01:00",
+    "title": "[HOT FIX] Update expected_synth.yml (#2676)",
+    "rtl": false
+  },
+  {
+    "sha": "d4b337851cac5c3491d73338728e9293d494bc4b",
+    "date": "2024-12-19T12:10:56+01:00",
+    "title": "RVFI : For synchronous trap, check mcause MSB also (#2674)",
+    "rtl": true
+  },
+  {
+    "sha": "f7dd49efa53419f698a175c659095ccb97ea604b",
+    "date": "2024-12-18T22:35:41+01:00",
+    "title": "Adding support for Scalar Crypto Extension (Bitmanip instructions for Cryptography, Zbkb) (#2653)",
+    "rtl": true
+  },
+  {
+    "sha": "b5caf14c50d1cd242b393b8ff68b92f7ec651d80",
+    "date": "2024-12-18T07:40:38+01:00",
+    "title": "ci: use different variables for runner tags (#2673)",
+    "rtl": false
+  },
+  {
+    "sha": "a4cec295a8d653ea34f3bbfc03528f4125d49917",
+    "date": "2024-12-17T23:37:02+01:00",
+    "title": "csr only uses one commit port (#2671)",
+    "rtl": true
+  },
+  {
+    "sha": "c5bde406363168bda7c5682c5c0d6c0d6dd98763",
+    "date": "2024-12-17T23:29:24+01:00",
+    "title": "apply verible (#2670)",
+    "rtl": true
+  },
+  {
+    "sha": "f4355fa49b6ed592579146dbfc65a34f3bbd6ed2",
+    "date": "2024-12-16T11:07:24+01:00",
+    "title": "bug fix: canonical check on virtual address for data accesses (#2667)",
+    "rtl": true
+  },
+  {
+    "sha": "fd213fc19e927efc0cf506659eef2ca639f5a375",
+    "date": "2024-12-12T19:10:26+01:00",
+    "title": "cut dangerous path from flush to issue (#2666)",
+    "rtl": true
+  },
+  {
+    "sha": "66ae110a51d27742fe8668daf3a95ddb3b4d9146",
+    "date": "2024-12-11T18:29:02+01:00",
+    "title": "CVXIF Verif : Connect CVXIF new agent (#2663)",
+    "rtl": false
+  },
+  {
+    "sha": "ed89c717f7174218841f56f4811f66bf8f69936c",
+    "date": "2024-12-09T13:22:38+01:00",
+    "title": "[CV32A65X] Update PMPADDRn spec to make bit 0 ROCST 0. Update config files. (#2651)",
+    "rtl": false
+  },
+  {
+    "sha": "5ff6b2d32e890403e7e0342ce274fa0409fc7108",
+    "date": "2024-12-05T15:29:24+01:00",
+    "title": "check spike version in cva6.py (#2654)",
+    "rtl": false
+  },
+  {
+    "sha": "f7eb9c1e7b8f15fdaaabb6f6d5b7fb5285a95e41",
+    "date": "2024-12-04T15:54:41+01:00",
+    "title": "Altera apu agilex7 (#2647)",
+    "rtl": true
+  },
+  {
+    "sha": "de0ebf0409da1ebb552f0683de9dbeb5b5414084",
+    "date": "2024-12-04T10:27:37+01:00",
+    "title": "add cv64a6_imafdch_sv39 config to cva6.py (#2646)",
+    "rtl": false
+  },
+  {
+    "sha": "23355d29f017a3757c342ec6610fcdd3aad8099f",
+    "date": "2024-12-04T10:06:36+01:00",
+    "title": "Pmp/extracted pmp master (#2528)",
+    "rtl": true
+  },
+  {
+    "sha": "b5b316ad1209ab7f8977429063481e181f007f65",
+    "date": "2024-12-03T07:43:05+01:00",
+    "title": "doc: fix build (cva6_frontend.adoc) (#2644)",
+    "rtl": false
+  },
+  {
+    "sha": "9877af5eb6e28700adc32dc7229622e2afa618f1",
+    "date": "2024-12-03T07:14:29+01:00",
+    "title": "fix size of vectors when AxiNumWords=1 (#2639)",
+    "rtl": true
+  }
+]

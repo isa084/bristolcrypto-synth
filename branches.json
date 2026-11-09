@@ -1,0 +1,9 @@
+[
+  {
+    "name": "master",
+    "synthesis_branch": "ft-synthesis",
+    "source": "zp-cva6",
+    "upstream": "bristolcrypto/zp-cva6",
+    "default": true
+  }
+]
