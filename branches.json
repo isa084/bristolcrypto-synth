@@ -5,5 +5,12 @@
     "source": "zp-cva6",
     "upstream": "bristolcrypto/zp-cva6",
     "default": true
+  },
+  {
+    "name": "feat/zp-tight-coupling",
+    "synthesis_branch": "ft-synthesis-tc",
+    "source": "zp-cva6",
+    "upstream": "bristolcrypto/zp-cva6",
+    "default": true
   }
 ]
