@@ -1,0 +1,632 @@
+{
+  "source": "zp-cva6",
+  "upstream_sha": "791e8449fa6df9b52f5b0e0849cbbd4acbda2624",
+  "upstream_date": "2026-11-12T05:36:46Z",
+  "upstream_title": "ZP as a tightly coupled unit beside the multiplier and divider",
+  "target": "cv64a6_imafdc_sv39",
+  "config": "cv64a6_imafdc_sv39",
+  "technology": "nangate45",
+  "sram_mode": "fakeram",
+  "mode": "fast",
+  "patches": [],
+  "flow_version": "v1.7-9-g5b20223",
+  "repo_commit": "755b250ccab453a7ea777760f4001e5ea1464083",
+  "status": "success",
+  "stdcell_area_um2": 426732,
+  "macro_area_um2": 299365,
+  "total_area_um2": 726097,
+  "stdcell_kgate": 534.7518796992481,
+  "fmax_mhz": 218.095,
+  "worst_slack_ps": -1585.17,
+  "sram_macros": 264,
+  "sram_bits": 540672,
+  "clock_period_ps": 3000,
+  "image": "openroad/orfs:26Q4-221-gef324e555@sha256:ca289d6df8401711a4ed310a83b5bd14fd42534d64b9b790bf5cbb02cc496278",
+  "run_started": "2026-11-12T07:07:29+00:00",
+  "gsim_run": null,
+  "gsim_passed": null,
+  "gsim": null,
+  "reports_url": "",
+  "params": {
+    "Clock period": "3000 ps",
+    "I/O delay": "30% of period",
+    "Core utilization": "55%",
+    "Hierarchical synthesis": "yes",
+    "Keep size (NAND2)": "10000",
+    "ABC script": "speed",
+    "Floorplan timing repair": "off",
+    "SRAM model": "fakeram"
+  },
+  "paths": {
+    "in2out": {
+      "slack_ps": 100.0,
+      "start": "cvxif_resp_i[70]",
+      "end": "cvxif_req_o[125]"
+    },
+    "in2reg": {
+      "slack_ps": 310.0,
+      "start": "cvxif_resp_i[70]",
+      "end": "issue_stage_i.i_scoreboard/fwd_o[3411]"
+    },
+    "reg2out": {
+      "slack_ps": -1400.0,
+      "start": "ex_stage_i.fpu_gen.fpu_i.fpu_gen.i_fpnew_bulk/gen_operation_groups[3].i_opgroup_block.gen_merged_slice.i_multifmt_slice.gen_num_lanes[0].active_lane.lane_instance.i_fpnew_cast_multi/dst_fmt_q2[1]",
+      "end": "cvxif_req_o[75]"
+    },
+    "reg2reg": {
+      "slack_ps": -1590.0,
+      "start": "issue_stage_i.i_issue_read_operands/lsu_valid_o",
+      "end": "gen_cache_wt.i_cache_subsystem/i_wt_dcache.i_wt_dcache_mem/gen_data_banks[1].i_data_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram/gen_lane[0].gen_256x8.i_macro"
+    }
+  },
+  "area_tree": {
+    "name": "cva6",
+    "module": "cva6",
+    "area": 726095.7,
+    "sram": 299365.2,
+    "children": [
+      {
+        "name": "csr_regfile_i",
+        "module": "csr_regfile",
+        "area": 20646.7,
+        "sram": 0.0
+      },
+      {
+        "name": "ex_stage_i",
+        "module": "",
+        "area": 184903.7,
+        "sram": 0.0,
+        "children": [
+          {
+            "name": "alu_i",
+            "module": "alu",
+            "area": 10678.0,
+            "sram": 0.0
+          },
+          {
+            "name": "fpu_gen.fpu_i.fpu_gen.i_fpnew_bulk",
+            "module": "fpnew_top",
+            "area": 68661.2,
+            "sram": 0.0,
+            "children": [
+              {
+                "name": "gen_operation_groups[0].i_opgroup_block",
+                "module": "",
+                "area": 42950.5,
+                "sram": 0.0,
+                "children": [
+                  {
+                    "name": "gen_parallel_slices[0].active_format.i_fmt_slice.gen_num_lanes[0].active_lane.lane_instance.i_fma",
+                    "module": "fpnew_fma",
+                    "area": 10671.9,
+                    "sram": 0.0
+                  },
+                  {
+                    "name": "gen_parallel_slices[1].active_format.i_fmt_slice.gen_num_lanes[0].active_lane.lane_instance.i_fma",
+                    "module": "fpnew_fma",
+                    "area": 32278.6,
+                    "sram": 0.0
+                  }
+                ]
+              },
+              {
+                "name": "gen_operation_groups[1].i_opgroup_block.gen_merged_slice.i_multifmt_slice.gen_num_lanes[0].active_lane.lane_instance.i_fpnew_divsqrt_multi.i_divsqrt_lei",
+                "module": "div_sqrt_top_mvp",
+                "area": 11551.0,
+                "sram": 0.0
+              },
+              {
+                "name": "gen_operation_groups[3].i_opgroup_block.gen_merged_slice.i_multifmt_slice.gen_num_lanes[0].active_lane.lane_instance.i_fpnew_cast_multi",
+                "module": "fpnew_cast_multi",
+                "area": 7954.7,
+                "sram": 0.0
+              },
+              {
+                "name": "(local)",
+                "module": "",
+                "area": 6205.0,
+                "sram": 0.0
+              }
+            ]
+          },
+          {
+            "name": "i_mult.i_multiplier",
+            "module": "multiplier",
+            "area": 33322.4,
+            "sram": 0.0
+          },
+          {
+            "name": "lsu_i",
+            "module": "load_store_unit",
+            "area": 72242.1,
+            "sram": 0.0,
+            "children": [
+              {
+                "name": "gen_mmu.i_cva6_mmu",
+                "module": "cva6_mmu",
+                "area": 42154.9,
+                "sram": 0.0,
+                "children": [
+                  {
+                    "name": "i_ptw.i_pmp_ptw",
+                    "module": "pmp",
+                    "area": 6103.9,
+                    "sram": 0.0
+                  },
+                  {
+                    "name": "(local)",
+                    "module": "",
+                    "area": 36051.0,
+                    "sram": 0.0
+                  }
+                ]
+              },
+              {
+                "name": "i_pmp_data_if",
+                "module": "",
+                "area": 12272.4,
+                "sram": 0.0,
+                "children": [
+                  {
+                    "name": "i_pmp_data",
+                    "module": "pmp",
+                    "area": 6132.9,
+                    "sram": 0.0
+                  },
+                  {
+                    "name": "i_pmp_if",
+                    "module": "pmp",
+                    "area": 6139.5,
+                    "sram": 0.0
+                  }
+                ]
+              },
+              {
+                "name": "i_store_unit.store_buffer_i",
+                "module": "store_buffer",
+                "area": 9212.1,
+                "sram": 0.0
+              },
+              {
+                "name": "(local)",
+                "module": "",
+                "area": 8602.7,
+                "sram": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "gen_cache_wt.i_cache_subsystem",
+        "module": "wt_cache_subsystem",
+        "area": 342447.3,
+        "sram": 299365.2,
+        "children": [
+          {
+            "name": "i_cva6_icache",
+            "module": "cva6_icache",
+            "area": 102714.4,
+            "sram": 99788.4,
+            "children": [
+              {
+                "name": "gen_sram[0]",
+                "module": "",
+                "area": 24948.7,
+                "sram": 24947.1,
+                "children": [
+                  {
+                    "name": "data_sram.genblk1.data_sram",
+                    "module": "",
+                    "area": 18143.4,
+                    "sram": 18143.4,
+                    "children": [
+                      {
+                        "name": "gen_cut[0].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9071.7,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[1].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9071.7,
+                        "sram": 9071.7
+                      }
+                    ]
+                  },
+                  {
+                    "name": "tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  }
+                ]
+              },
+              {
+                "name": "gen_sram[1]",
+                "module": "",
+                "area": 24948.7,
+                "sram": 24947.1,
+                "children": [
+                  {
+                    "name": "data_sram.genblk1.data_sram",
+                    "module": "",
+                    "area": 18143.4,
+                    "sram": 18143.4,
+                    "children": [
+                      {
+                        "name": "gen_cut[0].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9071.7,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[1].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9071.7,
+                        "sram": 9071.7
+                      }
+                    ]
+                  },
+                  {
+                    "name": "tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  }
+                ]
+              },
+              {
+                "name": "gen_sram[2]",
+                "module": "",
+                "area": 24948.7,
+                "sram": 24947.1,
+                "children": [
+                  {
+                    "name": "data_sram.genblk1.data_sram",
+                    "module": "",
+                    "area": 18143.4,
+                    "sram": 18143.4,
+                    "children": [
+                      {
+                        "name": "gen_cut[0].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9071.7,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[1].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9071.7,
+                        "sram": 9071.7
+                      }
+                    ]
+                  },
+                  {
+                    "name": "tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  }
+                ]
+              },
+              {
+                "name": "gen_sram[3]",
+                "module": "",
+                "area": 24948.7,
+                "sram": 24947.1,
+                "children": [
+                  {
+                    "name": "data_sram.genblk1.data_sram",
+                    "module": "",
+                    "area": 18143.4,
+                    "sram": 18143.4,
+                    "children": [
+                      {
+                        "name": "gen_cut[0].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9071.7,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[1].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9071.7,
+                        "sram": 9071.7
+                      }
+                    ]
+                  },
+                  {
+                    "name": "tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  }
+                ]
+              },
+              {
+                "name": "(local)",
+                "module": "",
+                "area": 2919.6,
+                "sram": 0.0
+              }
+            ]
+          },
+          {
+            "name": "i_wt_dcache",
+            "module": "",
+            "area": 228834.3,
+            "sram": 199576.8,
+            "children": [
+              {
+                "name": "i_wt_dcache_mem",
+                "module": "wt_dcache_mem",
+                "area": 209068.1,
+                "sram": 199576.8,
+                "children": [
+                  {
+                    "name": "gen_data_banks[0].i_data_sram.genblk1.data_sram",
+                    "module": "",
+                    "area": 72656.0,
+                    "sram": 72573.6,
+                    "children": [
+                      {
+                        "name": "gen_cut[0].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[1].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[2].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[3].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[4].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[5].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[6].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[7].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      }
+                    ]
+                  },
+                  {
+                    "name": "gen_data_banks[1].i_data_sram.genblk1.data_sram",
+                    "module": "",
+                    "area": 72656.0,
+                    "sram": 72573.6,
+                    "children": [
+                      {
+                        "name": "gen_cut[0].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[1].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[2].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[3].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[4].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[5].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[6].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      },
+                      {
+                        "name": "gen_cut[7].i_tc_sram_wrapper.i_sram",
+                        "module": "cva6_sram_1rw",
+                        "area": 9082.0,
+                        "sram": 9071.7
+                      }
+                    ]
+                  },
+                  {
+                    "name": "gen_tag_srams[0].i_tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  },
+                  {
+                    "name": "gen_tag_srams[1].i_tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  },
+                  {
+                    "name": "gen_tag_srams[2].i_tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  },
+                  {
+                    "name": "gen_tag_srams[3].i_tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  },
+                  {
+                    "name": "gen_tag_srams[4].i_tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  },
+                  {
+                    "name": "gen_tag_srams[5].i_tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  },
+                  {
+                    "name": "gen_tag_srams[6].i_tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  },
+                  {
+                    "name": "gen_tag_srams[7].i_tag_sram.genblk1.data_sram.gen_cut[0].i_tc_sram_wrapper.i_sram",
+                    "module": "cva6_sram_1rw",
+                    "area": 6805.3,
+                    "sram": 6803.7
+                  },
+                  {
+                    "name": "(local)",
+                    "module": "",
+                    "area": 9313.7,
+                    "sram": 0.0
+                  }
+                ]
+              },
+              {
+                "name": "i_wt_dcache_wbuffer",
+                "module": "wt_dcache_wbuffer",
+                "area": 19766.2,
+                "sram": 0.0
+              }
+            ]
+          },
+          {
+            "name": "(local)",
+            "module": "",
+            "area": 10898.6,
+            "sram": 0.0
+          }
+        ]
+      },
+      {
+        "name": "gen_perf_counter.perf_counters_i",
+        "module": "perf_counters",
+        "area": 6492.8,
+        "sram": 0.0
+      },
+      {
+        "name": "i_frontend",
+        "module": "frontend",
+        "area": 43515.2,
+        "sram": 0.0,
+        "children": [
+          {
+            "name": "btb_gen.i_btb",
+            "module": "btb",
+            "area": 19384.2,
+            "sram": 0.0
+          },
+          {
+            "name": "i_instr_queue",
+            "module": "instr_queue",
+            "area": 10963.7,
+            "sram": 0.0
+          },
+          {
+            "name": "(local)",
+            "module": "",
+            "area": 13167.3,
+            "sram": 0.0
+          }
+        ]
+      },
+      {
+        "name": "issue_stage_i",
+        "module": "",
+        "area": 110531.3,
+        "sram": 0.0,
+        "children": [
+          {
+            "name": "i_issue_read_operands",
+            "module": "issue_read_operands",
+            "area": 73253.5,
+            "sram": 0.0,
+            "children": [
+              {
+                "name": "float_regfile_gen.gen_asic_fp_regfile.i_ariane_fp_regfile",
+                "module": "ariane_regfile",
+                "area": 29566.2,
+                "sram": 0.0
+              },
+              {
+                "name": "gen_asic_regfile.i_ariane_regfile",
+                "module": "ariane_regfile",
+                "area": 26554.5,
+                "sram": 0.0
+              },
+              {
+                "name": "(local)",
+                "module": "",
+                "area": 17132.8,
+                "sram": 0.0
+              }
+            ]
+          },
+          {
+            "name": "i_scoreboard",
+            "module": "scoreboard",
+            "area": 37277.8,
+            "sram": 0.0
+          }
+        ]
+      },
+      {
+        "name": "(local)",
+        "module": "",
+        "area": 17558.7,
+        "sram": 0.0
+      }
+    ]
+  }
+}
